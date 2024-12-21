@@ -9,6 +9,7 @@ import {
   TextInput,
   SafeAreaView,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 const { width, height } = Dimensions.get("window");
 
@@ -93,15 +94,292 @@ const Index = () => {
         </View>
         <View style={{
           display:"flex",
+          flexDirection:"column",
           justifyContent:"center",
           alignItems:"center",
+          marginTop:200,
           flex:1
         }}>
           <Text style={{
-            color:"black"
+            color:"white",
+            fontWeight:"bold",
+            fontSize:40
           }}>
-            hello
+            hello,
+            <Text style={{
+              marginLeft:10,
+              fontSize:15,
+
+            }}>
+              bhimavaram
+            </Text>
           </Text>
+          <View style={
+            {
+              marginTop:40,
+              flexDirection:"row",
+              justifyContent:"center"
+            }
+          }>
+            <Image source={require('../../assets/images/partlycloudy.png')} style={{
+              height:150,
+              width:150
+            }}/>
+
+          </View>
+          <View style={{
+            marginTop:30
+          }}>
+            <Text style={{
+              color:"white",
+              fontSize:35,
+              textAlign:"center",
+              fontWeight:"bold"
+            }}>
+              52.0 &#176;C
+            </Text>
+            <Text style={{
+              color:"white",
+              fontSize:20,
+              fontWeight:"bold"
+            }}>
+             Party Cloudy
+            </Text>
+          </View>
+          {/* stats */}
+          <View style={{
+            display:"flex",
+            flexDirection:"row",
+            width:"100%",
+            alignItems:"flex-start",
+           padding:20,
+           marginTop:40,
+            justifyContent:"space-between"
+          }}>
+          
+            <View style={{
+                display:"flex",
+                flexDirection:"row",
+                alignItems:"center"
+            }}>
+              <Image source={require('../../assets/icons/wind.png')} style={{
+                height:20,
+                width:20
+              }}/>
+              <Text style={{
+                color:"white",
+                paddingLeft:5,
+                fontWeight:"bold"
+              }}>
+                22km
+              </Text>
+            </View>
+            <View style={{
+                display:"flex",
+                flexDirection:"row",
+                alignItems:"center"
+            }}>
+              <Image source={require('../../assets/icons/drop.png')} style={{
+                height:20,
+                width:20
+              }}/>
+              <Text style={{
+                color:"white",
+                paddingLeft:5,
+                fontWeight:"bold"
+              }}>
+                22%
+              </Text>
+            </View>
+            <View style={{
+                display:"flex",
+                flexDirection:"row",
+                alignItems:"center"
+            }}>
+              <Image source={require('../../assets/icons/sun.png')} style={{
+                height:20,
+                width:20
+              }}/>
+              <Text style={{
+                color:"white",
+                paddingLeft:5,
+                fontWeight:"bold"
+              }}>
+                10.05 AMx
+              </Text>
+            </View>
+
+          </View>
+        </View>
+        <View style={{
+          
+          marginVertical:5,
+          width:"100%"
+        }}>
+          <View style={{
+            flexDirection:"row",
+            width:"100%",
+            justifyContent:"flex-start",
+            alignItems: "center",
+            marginVertical:3,
+            padding:10
+          }}>
+            <Text style={{
+              color:"white",
+              textAlign:"left"
+            }}>
+              Daily Forecast
+            </Text>
+          </View>
+          <ScrollView
+          horizontal
+          contentContainerStyle={{paddingHorizontal:15}}
+          showsHorizontalScrollIndicator={false }
+          style={{
+            marginBottom:20
+          }}
+          >
+            <View style={{
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"center",
+              width:100,
+              borderRadius:30,
+              paddingVertical:10,
+              marginRight:10,
+              backgroundColor:"white",
+              opacity:0.15
+            }}>
+              <Image source={require("../../assets/images/heavyrain.png")} style={{
+                height:50,
+                width:50
+              }}/>
+              <Text style={{
+                color:"white",
+                
+              }}>Monday</Text>
+            </View>
+            <View style={{
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"center",
+              width:100,
+              borderRadius:30,
+              paddingVertical:10,
+              marginRight:10,
+              backgroundColor:"white",
+              opacity:0.15
+            }}>
+              <Image source={require("../../assets/images/heavyrain.png")} style={{
+                height:50,
+                width:50
+              }}/>
+              <Text style={{
+                color:"white",
+                
+              }}>Monday</Text>
+            </View>
+            <View style={{
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"center",
+              width:100,
+              borderRadius:30,
+              paddingVertical:10,
+              marginRight:10,
+              backgroundColor:"white",
+              opacity:0.15
+            }}>
+              <Image source={require("../../assets/images/heavyrain.png")} style={{
+                height:50,
+                width:50
+              }}/>
+              <Text style={{
+                color:"white",
+                
+              }}>Monday</Text>
+            </View>
+            <View style={{
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"center",
+              width:100,
+              borderRadius:30,
+              paddingVertical:10,
+              marginRight:10,
+              backgroundColor:"white",
+              opacity:0.15
+            }}>
+              <Image source={require("../../assets/images/heavyrain.png")} style={{
+                height:50,
+                width:50
+              }}/>
+              <Text style={{
+                color:"white",
+                
+              }}>Monday</Text>
+            </View>
+            <View style={{
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"center",
+              width:100,
+              borderRadius:30,
+              paddingVertical:10,
+              marginRight:10,
+              backgroundColor:"white",
+              opacity:0.15
+            }}>
+              <Image source={require("../../assets/images/heavyrain.png")} style={{
+                height:50,
+                width:50
+              }}/>
+              <Text style={{
+                color:"white",
+                
+              }}>Monday</Text>
+            </View>
+            <View style={{
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"center",
+              width:100,
+              borderRadius:30,
+              paddingVertical:10,
+              marginRight:10,
+              backgroundColor:"white",
+              opacity:0.15
+            }}>
+              <Image source={require("../../assets/images/heavyrain.png")} style={{
+                height:50,
+                width:50
+              }}/>
+              <Text style={{
+                color:"white",
+                
+              }}>Monday</Text>
+            </View>
+            <View style={{
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"center",
+              width:100,
+              borderRadius:30,
+              paddingVertical:10,
+              marginRight:10,
+              backgroundColor:"white",
+              opacity:0.15
+            }}>
+              <Image source={require("../../assets/images/heavyrain.png")} style={{
+                height:50,
+                width:50
+              }}/>
+              <Text style={{
+                color:"white",
+                
+              }}>Monday</Text>
+            </View>
+          </ScrollView>
         </View>
       </SafeAreaView>
     </View>
